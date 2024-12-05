@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1002</width>
+    <height>714</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #6E6E6E;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="add">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>30</y>
+      <width>181</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>System</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 5px solid #ffaa7f;
+color: #ffaa7f;
+background: #6E6E6E;
+border-radius: 60;
+}
+QPushButton:hover{
+border: 5px solid #6E6E6E;
+background: #ffaa7f;
+color:#6E6E6E;
+border-radius: 60;
+}</string>
+    </property>
+    <property name="text">
+     <string>ДОБАВИТЬ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lookfor">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>30</y>
+      <width>181</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>System</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 5px solid #ffaa7f;
+color: #ffaa7f;
+background: #6E6E6E;
+border-radius: 60;
+}
+QPushButton:hover{
+border: 5px solid #6E6E6E;
+background: #ffaa7f;
+color:#6E6E6E;
+border-radius: 60;
+}</string>
+    </property>
+    <property name="text">
+     <string>НАЙТИ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delet">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>30</y>
+      <width>181</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>System</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 5px solid #ffaa7f;
+color: #ffaa7f;
+background: #6E6E6E;
+border-radius: 60;
+}
+QPushButton:hover{
+border: 5px solid #6E6E6E;
+background: #ffaa7f;
+color:#6E6E6E;
+border-radius: 60;
+}</string>
+    </property>
+    <property name="text">
+     <string>УДАЛИТЬ</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>381</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>System</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 5px solid #ffaa7f;
+color: rgb(0, 0, 0);
+background: #6E6E6E;
+border-radius: 30;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>писать тут</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>381</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>System</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 5px solid #ffaa7f;
+color:#ffaa7f;
+background: #6E6E6E;
+border-radius: 30;</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>                                  По автору</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>                                  По названия</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>1002</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(255, 170, 127);</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
