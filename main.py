@@ -107,6 +107,7 @@ class Forlibrary(Library, QMainWindow):
         except Exception as ex:
             print(ex)
 
+
 class Info(Inf, QMainWindow):
     def __init__(self, title, author, genre, image, year):
         super().__init__()
@@ -119,11 +120,11 @@ class Info(Inf, QMainWindow):
         if os.path.exists(image):
             pass
         else:
-            image = "Photo/8f2b47ca613a0ace7ef7960c37974f30.jpeg"
+            image = "Photo/koshka.jpeg"
         self.label.setPixmap(QtGui.QPixmap(image))
 
-    def keyPressEvent(self, e):
-        if e.key() == 16777216:
+    def keyPressEvent(self, event):
+        if event.key() == QtCore.Qt.Key.Key_Escape:
             self.close()
 
 
@@ -150,7 +151,7 @@ class Addbook(AddLibrary, QDialog):
     def check(self):
         try:
             if all([self.lineEdit_2.text(), self.lineEdit.text(), self.lineEdit_3.text(), self.lineEdit_4.text()]):
-                image = "Photo/8f2b47ca613a0ace7ef7960c37974f30.jpeg"
+                image = "Photo/koshka.jpeg"
                 if self.photopath != False:
                     image = self.photopath[0]
                     print(image)
@@ -168,8 +169,8 @@ class Addbook(AddLibrary, QDialog):
         except Exception as ex:
             print(ex)
 
-    def keyPressEvent(self, e):
-        if e.key() == 16777216:
+    def keyPressEvent(self, event):
+        if event.key() == QtCore.Qt.Key.Key_Escape:
             self.close()
 
 
